@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonie Thérapie - Coaching</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f8f6f3; /* beige poudré */
+      color: #444;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #e7e2dd; /* greige clair */
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a67856; /* accent poudré */
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #f1ece8;
+    }
+    .hero h2 {
+      font-size: 32px;
+      color: #2e2e2e;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea, button {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #a67856;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #8a5e42;
+    }
+    footer {
+      background-color: #e7e2dd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Harmonie Thérapie</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil">
+    <h2>Retrouvez l'équilibre et la confiance</h2>
+    <p>Coaching pour enfants et adultes afin de mieux gérer l’attention, retrouver la sérénité et avancer avec harmonie.</p>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Je m'appelle Sarah Michaux, coach spécialisée dans l’accompagnement des enfants et adultes avec troubles de l’attention. Mon approche est basée sur l’écoute, la bienveillance et des outils pratiques adaptés à chacun.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>✅ Coaching individuel<br>
+       ✅ Ateliers pour enfants<br>
+       ✅ Accompagnement des familles<br>
+       ✅ Formations pour enseignants et éducateurs</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mwpqjaez" method="POST">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Harmonie Thérapie - Tous droits réservés
+  </footer>
+
+</body>
+</html>
