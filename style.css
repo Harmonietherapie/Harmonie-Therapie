@@ -31,6 +31,8 @@ body {
 .contact-image-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ajouté pour aligner les éléments verticalement */
 }
 
 .contact-image-wrapper img {
