@@ -37,6 +37,7 @@ body {
   width: 160px;
   height: 160px;
   object-fit: cover;
+  object-position: top;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
