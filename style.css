@@ -42,7 +42,7 @@ body {
   object-position: center 30%; /* recentre le cadrage */
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transform: scale(0.85);   /* <--- dézoom léger */
+  transform: scale(0.75);   /* <--- dézoom léger */
   transform-origin: center; /* garde le centrage */
 }
 .contact-description {
