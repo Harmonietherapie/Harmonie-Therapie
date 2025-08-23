@@ -36,12 +36,14 @@ body {
 }
 
 .contact-image-wrapper img {
-  width: 160px;
-  height: 160px;
+  width: 180px;             /* agrandit légèrement l’encart */
+  height: 180px;
   object-fit: cover;
-  object-position: 40% 10%;
+  object-position: center 30%; /* recentre le cadrage */
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0.85);   /* <--- dézoom léger */
+  transform-origin: center; /* garde le centrage */
 }
 .contact-description {
   text-align: center;
