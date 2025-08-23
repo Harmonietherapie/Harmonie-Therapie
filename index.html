@@ -153,20 +153,24 @@
 </head>
 <body>
 
-  <header>
+<header class="site-header">
+  <div class="logo-wrapper">
+    <img src="logo.png" alt="Harmonie Thérapie" class="logo">
     <h1>Harmonie Thérapie</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <nav id="nav">
-      <a href="#accueil">Accueil</a>
-      <a href="#apropos">À propos</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  </div>
+
+  <div class="menu-toggle" onclick="...">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav">
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+  </nav>
+</header>
 
   <section class="hero" id="accueil">
     <h2>Retrouvez équilibre & confiance</h2>
@@ -219,6 +223,7 @@
       nav.classList.toggle("active");
     }
   </script>
+
 
 
 
