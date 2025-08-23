@@ -248,3 +248,10 @@ body {
 #services .pricing{
   margin: 20px auto !important;      /* centre le bloc tarifs */
 }
+/* Centre le titre "Tarifs 2024–2025" de manière robuste */
+#services { text-align: center; }                 /* centre le contenu direct du bloc services */
+#services h3#tarifs {
+  display: inline-block;                          /* prend juste la largeur du texte */
+  margin: 28px auto 12px !important;              /* espace + centrage */
+  text-align: center !important;
+}
