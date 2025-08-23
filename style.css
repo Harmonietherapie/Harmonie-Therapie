@@ -79,51 +79,56 @@ body {
   }
 }
 /* --- Tarifs (pricing) --- */
-#services h3#tarifs{
+#services h3#tarifs {
   margin-top: 28px;
   font-size: 22px;
   color: #333;
+  text-align: center;
 }
 
-.pricing{
-  background: #f7f4f1;         /* beige doux */
+.pricing {
+  background: #f7f4f1;          /* beige doux */
   border: 1px solid #e7e1db;
   border-radius: 12px;
-  padding: 16px;
+  padding: 20px;
+  max-width: 600px;             /* largeur max du bloc */
+  margin: 20px auto;            /* centre le bloc */
+  text-align: center;
 }
 
-.pricing .group{
-  padding: 10px 0 6px;
+.pricing .group {
+  padding: 12px 0;
   border-top: 1px dashed #e2d8cf;
 }
-.pricing .group:first-of-type{ border-top: none; padding-top: 0; }
+.pricing .group:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
 
-.pricing h4{
-  margin: 0 0 8px;
-  font-size: 16px;
+.pricing h4 {
+  margin: 15px 0 10px;
+  font-size: 18px;
   color: #2a2a2a;
 }
 
-.pricing .row{
+.pricing .row {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  padding: 6px 0;
+  max-width: 400px;             /* largeur du tableau interne */
+  margin: 6px auto;             /* centre chaque ligne */
+  text-align: left;
 }
-.pricing .row span{ color: #444; }
-.pricing .row strong{ color: #222; }
 
-.pricing .notes{
-  margin: 12px 0 0;
+.pricing .row span {
+  color: #444;
+}
+.pricing .row strong {
+  color: #222;
+}
+
+.pricing .notes {
+  margin: 16px auto 0;
   font-size: 13px;
   color: #6f6f6f;
-}
-
-/* Mobile : empiler libellé/prix proprement */
-@media (max-width: 640px){
-  .pricing .row{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: baseline;
-  }
+  max-width: 450px;
 }
