@@ -132,3 +132,12 @@ body {
   color: #6f6f6f;
   max-width: 450px;
 }
+#services h3#tarifs {
+  margin-top: 28px;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #e7e1db;
+  display: inline-block;   /* la ligne ne fait que la largeur du texte */
+  padding-bottom: 5px;
+}
