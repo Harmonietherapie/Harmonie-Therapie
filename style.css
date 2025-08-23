@@ -183,3 +183,25 @@ body {
   margin: 0 auto;
   max-width: 700px;        /* pas de pavé trop large */
 }
+/* HERO plus doux */
+#accueil, section#accueil {
+  text-align: center !important;
+  padding: 60px 20px !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+#accueil h1, #accueil h2 {
+  font-size: 1.8em !important;
+  font-weight: 600 !important;
+  margin-bottom: 20px !important;
+  color: #333 !important;
+}
+
+#accueil p {
+  font-size: 1.05em !important;
+  line-height: 1.7 !important;
+  color: #555 !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
