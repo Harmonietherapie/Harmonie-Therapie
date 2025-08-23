@@ -159,3 +159,27 @@ body {
   margin: 28px auto 12px;
   text-align: center;
 }
+/* Bloc d’accueil (hero) */
+#accueil {
+  text-align: center;
+  padding: 60px 20px;      /* espace autour, aère le texte */
+  max-width: 900px;        /* limite la largeur */
+  margin: 0 auto;          /* centre sur la page */
+}
+
+/* Titre d’accueil */
+#accueil h2 {
+  font-size: 1.8em;        /* moins gros que maintenant */
+  font-weight: 600;        /* un peu moins gras */
+  margin-bottom: 20px;     /* espace sous le titre */
+  color: #333;             /* couleur douce */
+}
+
+/* Paragraphe d’accueil */
+#accueil p {
+  font-size: 1.05em;       /* texte légèrement plus petit */
+  line-height: 1.7;        /* plus d’espace entre les lignes */
+  color: #555;             /* gris doux */
+  margin: 0 auto;
+  max-width: 700px;        /* pas de pavé trop large */
+}
