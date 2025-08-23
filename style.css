@@ -142,3 +142,13 @@ body {
   display: inline-block;   /* la ligne ne fait que la largeur du texte */
   padding-bottom: 5px;
 }
+/* Centre le titre "Tarifs 2024–2025" */
+#services h3#tarifs{
+  max-width: 600px;          /* même largeur que .pricing */
+  margin: 28px auto 12px;    /* centre le bloc du titre */
+  text-align: center;        /* centre le texte à l'intérieur */
+  /* option déco :
+  border-bottom: 2px solid #e7e1db;
+  padding-bottom: 5px;
+  */
+}
