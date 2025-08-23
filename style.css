@@ -238,3 +238,13 @@ body {
   #accueil h2 { font-size: 1.4em; }
   #accueil p { font-size: 1em; line-height: 1.7; }
 }
+/* Recentrer le titre + le bloc tarifs */
+#services h3#tarifs{
+  max-width: 600px;
+  display: block;
+  margin: 28px auto 12px !important; /* centre le titre */
+  text-align: center !important;
+}
+#services .pricing{
+  margin: 20px auto !important;      /* centre le bloc tarifs */
+}
