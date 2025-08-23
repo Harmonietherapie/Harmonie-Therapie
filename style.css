@@ -152,3 +152,10 @@ body {
   padding-bottom: 5px;
   */
 }
+/* Titre Tarifs centré */
+#services h3#tarifs {
+  max-width: 600px;
+  display: block;
+  margin: 28px auto 12px;
+  text-align: center;
+}
