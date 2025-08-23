@@ -49,3 +49,14 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+
+/* ----- LOGO + NOM DU SITE ----- */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espace entre le logo et le texte */
+}
+
+.logo {
+  height: 40px; /* ajuste la taille du logo */
+}
