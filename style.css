@@ -57,12 +57,24 @@ body {
   gap: 10px; /* espace entre le logo et le texte */
 }
 
+/* Logo rond – même rendu desktop & mobile */
 .logo {
-  width: 60px;          /* largeur du rond */
-  height: 60px;         /* hauteur du rond */
-  border-radius: 50%;   /* arrondi complet */
-  object-fit: contain;  /* conserve tout le logo sans le couper */
-  background-color: #fff; /* optionnel : fond blanc derrière le logo */
-  padding: 5px;         /* optionnel : ajoute un petit espace intérieur */
+  width: 60px !important;
+  height: 60px !important;   /* garde le format carré */
+  border-radius: 50%;
+  object-fit: contain;       /* logo entier */
+  background-color: #fff;    /* marges blanches internes */
+  padding: 6px;              /* espace blanc autour du dessin */
+  box-sizing: border-box;    /* le padding reste dans le cercle */
   display: block;
+  flex-shrink: 0;            /* ne rétrécit pas dans le flex du header */
+}
+
+/* Option mobile : encore plus d’air si tu veux */
+@media (max-width: 640px) {
+  .logo {
+    width: 56px !important;
+    height: 56px !important;
+    padding: 8px;            /* ↑ marges blanches sur mobile */
+  }
 }
