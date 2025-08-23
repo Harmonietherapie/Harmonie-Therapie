@@ -58,5 +58,8 @@ body {
 }
 
 .logo {
-  height: 40px; /* ajuste la taille du logo */
+  height: 60px;       /* ajuste la taille du logo (essaie 50–70px) */
+  width: 60px;        /* carré pour bien arrondir */
+  border-radius: 50%; /* arrondi en cercle */
+  object-fit: cover;  /* recadre bien l’image dans le rond */
 }
