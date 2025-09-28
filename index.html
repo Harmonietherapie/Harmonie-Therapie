@@ -259,20 +259,20 @@
   <p class="contact-description">Vous souhaitez échanger ? Je serais ravie de vous lire ou de vous rencontrer.</p>
   <div class="contact-image-wrapper">
     <img src="portrait-sarah.jpg" alt="Sarah Michaux - Harmonie Thérapie">
-  </div>
-<form class="contact-form" action="https://formspree.io/f/mwpqjaez" method="POST">
-  <input type="text" placeholder="Votre nom" name="nom" required>
-  <input type="email" placeholder="Votre email" name="email" required>
+ <section id="contact">
+  <h2>Contact</h2>
+  <p class="contact-description">Vous souhaitez échanger ? Je serais ravie de vous lire ou de vous rencontrer en rendez-vous.</p>
 
-  <label for="slot">Choix du créneau :</label><br>
-  <select id="slot" name="créneau" required>
-    <option value="">-- Sélectionnez un créneau --</option>
-    <option value="Mercredi 23 octobre - 15h">Mercredi 23 octobre – 15h</option>
-    <option value="Mercredi 23 octobre - 16h30">Mercredi 23 octobre – 16h30</option>
-    <option value="Samedi 26 octobre - 13h30">Samedi 26 octobre – 13h30</option>
-    <option value="Samedi 26 octobre - 15h">Samedi 26 octobre – 15h</option>
-    <option value="Samedi 26 octobre - 16h30">Samedi 26 octobre – 16h30</option>
-  
+  <!-- Calendly inline widget -->
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/sarah-michaux/consultation"
+       style="min-width:320px;height:700px;">
+  </div>
+  <script type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js" async>
+  </script>
+</section>
+
   </select><br><br>
 
   <label for="message">Message (facultatif) :</label><br>
@@ -293,6 +293,7 @@
       nav.classList.toggle("active");
     }
   </script>
+
 
 
 
