@@ -291,3 +291,33 @@ section h2 {
   margin-bottom: 20px;
   font-weight: 700;
 }
+/* --- Personnalisation sections et texte --- */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f9f8f6; /* gris beige doux */
+  border-radius: 8px; /* coins légèrement arrondis */
+}
+
+/* Paragraphes */
+section p {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+  color: #5a5352; /* gris taupe pour texte */
+}
+
+/* Mise en valeur phrases clés */
+section p em {
+  font-style: italic;
+  color: #f2b6c8; /* rose clair barbapapa */
+  font-weight: 500;
+}
+
+/* Titres de section */
+section h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #f7d9e3; /* rose fleur de cerisier */
+  text-align: center;
+}
