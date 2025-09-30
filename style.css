@@ -321,3 +321,11 @@ section h2 {
   color: #f7d9e3; /* rose fleur de cerisier */
   text-align: center;
 }
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fcf4ef; /* gris-beige rosé chaleureux */
+  border-radius: 8px;
+}
