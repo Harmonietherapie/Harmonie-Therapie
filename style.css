@@ -267,3 +267,27 @@ p {
   margin: 28px auto 12px !important;              /* espace + centrage */
   text-align: center !important;
 }
+/* Limiter la largeur du texte et centrer */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Espacement entre paragraphes */
+section p {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+/* Mise en valeur des phrases clés */
+section p em {
+  font-style: italic;
+  color: #6b5b95; /* un ton doux (violet/gris/beige selon ta charte) */
+}
+
+/* Titre de section */
+section h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
