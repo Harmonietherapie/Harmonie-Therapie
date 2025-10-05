@@ -1,323 +1,331 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harmonie Thérapie - Coaching</title>
-  <link rel="stylesheet" href="style.css?v"=7">
-  <style>
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f9f5f6;
-      color: #444;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #e7e2dd;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 22px;
-      color: #333;
-      font-weight: 600;
-    }
-
-    nav {
-      display: flex;
-      gap: 15px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #555;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #a67856;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle span {
-      background: #333;
-      height: 3px;
-      margin: 4px 0;
-      width: 25px;
-      border-radius: 3px;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: #e7e2dd;
-        padding: 10px 20px;
-        border-radius: 8px;
-      }
-
-      nav.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #333;
-      text-align: center;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: #f1ece8;
-    }
-
-    .hero h2 {
-      font-size: 32px;
-      color: #2e2e2e;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 20px auto;
-    }
-
-    form {
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea, button {
-      margin: 10px 0;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
-    }
-
-    button {
-      background-color: #a67856;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #8a5e42;
-    }
-
-    footer {
-      background-color: #e7e2dd;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
-</head>
-<body>
-
-<header class="site-header">
-  <div class="logo-wrapper">
-    <img src="logo.jpeg" alt="Harmonie Thérapie" class="logo">
-    <h1>Harmonie Thérapie</h1>
-  </div>
-
-  <div class="menu-toggle" onclick="...">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <nav id="nav">
-    <a href="#accueil">Accueil</a>
-    <a href="#apropos">À propos</a>
-    <a href="#services">Services</a>
-  </nav>
-</header>
-
-  <section class="intro">
-  <h2>Thérapeute pour enfants, adultes et couples</h2>
-  <p>
-    Je me suis spécialisée dans l’accompagnement du <strong>TDAH</strong>.
-    J’aide à clarifier les questionnements, à trouver des outils concrets et à avancer sereinement,
-    en attendant — ou en complément — d’un suivi spécialisé.
-  </p>
-  <p>
-    <em>Mon objectif&nbsp;: que chacun retrouve harmonie et qualité de vie au quotidien.</em>
-  </p>
-</section>
-
-<section id="about">
-  <h2>À propos</h2>
-
-  <p>
-    Bonjour, je suis <strong>Sarah Michaux</strong>. 
-    Je suis thérapeute et j’accompagne les enfants, les adultes et les couples dans leurs difficultés personnelles, relationnelles ou familiales. 
-    Mon approche repose sur l’écoute, la bienveillance et des outils concrets, faciles à mettre en place au quotidien.
-  </p>
-
-  <p>
-    Je me suis spécialisée dans l’accompagnement du <strong>TDAH</strong>. 
-    Souvent, les personnes concernées se retrouvent face à beaucoup de questions : certaines réponses font sens, d’autres entretiennent le doute, et les délais pour rencontrer un spécialiste sont souvent très longs. 
-    Mon rôle est de vous offrir une première écoute, de vous aider à clarifier votre situation et de vous donner des pistes concrètes pour avancer dès maintenant, en attendant — ou en complément — d’un suivi médical spécialisé.
-  </p>
-</section>
-<h3 id="tarifs" style="max-width:600px;display:block;margin:28px auto 12px;text-align:center;">
-  Tarifs 2024–2025
-</h3>
-
-<div class="pricing">
-  <!-- Bilan TDAH -->
-  <section class="group">
-    <h4>Première séance bilan (TDAH ou Autres) </h4>
-    <div class="row">
-      <span>Première séance bilan (1h00)</span>
-      <strong>50&nbsp;€</strong>
-    </div>
-
-  </section>
-
-  <!-- Intervenante scolaire -->
-  <section class="group">
-    <h4>Intervenante scolaire</h4>
-    <div class="row">
-      <span>Intervention en école (2h)</span>
-      <strong>120&nbsp;€</strong>
-    </div>
-  </section>
-
-  <!-- Home Organizer -->
-  <section class="group">
-    <h4>Home Organizer</h4>
-    <div class="row">
-      <span>Consultation découverte (1h30 à domicile)</span>
-      <strong>50&nbsp;€</strong>
-    </div>
-    <div class="row">
-      <span>Séance organisation (3h)</span>
-      <strong>150&nbsp;€</strong>
-    </div>
-    <div class="row">
-      <span>Forfait 10h (sur plusieurs jours)</span>
-      <strong>400&nbsp;€</strong>
-    </div>
-  </section>
-
-  <!-- TCC -->
-  <section class="group">
-    <h4>Thérapie cognitive &amp; comportementale (TCC)</h4>
-    <div class="row">
-      <span>Consultation individuelle (50 min)</span>
-      <strong>40&nbsp;€</strong>
-    </div>
-    <div class="row">
-      <span>Suivi en ligne (45 min)</span>
-      <strong>30&nbsp;€</strong>
-    </div>
-  </section>
-
-  <p class="notes">
-    <strong>Infos pratiques :</strong> paiement mobile ou virement • annulation sans frais &gt; 24h • tarifs valables 2024–2025.
-  </p>
-</div>
-  </section>
-
-
-  <div class="contact-image-wrapper">
-  <section id="contact">
-  <h2>Contact</h2>
-  <p class="contact-description">Vous souhaitez échanger ? Je serais ravie de vous lire ou de vous rencontrer en rendez-vous.</p>
-
-  <div class="contact-image-wrapper">
-    <img src="portrait-sarah.jpg" alt="Sarah Michaux - Harmonie Thérapie">
-  </div>
-
-  <!-- Calendly inline widget -->
-  <div class="calendly-inline-widget"
-       data-url="https://calendly.com/srhmichaux/30min?back=1&month=2025-10?locale=fr"
-       style="min-width:320px;height:700px;">
-  </div>
-  <script type="text/javascript"
-          src="https://assets.calendly.com/assets/external/widget.js" async>
-  </script>
-
-  <!-- Bouton de secours -->
-  <p style="text-align:center; margin-top:20px;">
-    <a href="https://calendly.com/srhmichaux/50min?locale=fr" target="_blank"
-       style="padding:10px 20px; background:#c5b8a5; color:#fff; text-decoration:none; border-radius:5px;">
-      Réserver via Calendly
-    </a>
-  </p>
-</section>
-
-    &copy; 2025 Harmonie Thérapie - Tous droits réservés
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("nav");
-      nav.classList.toggle("active");
-    }
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Police principale du site */
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 400; /* Texte par défaut */
+    line-height: 1.6; /* Améliore la lisibilité */
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700; /* Gras pour bien distinguer les titres */
+    line-height: 1.3;
+}
+
+/* Paragraphes */
+p {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.contact-photo {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f2ee;
+  color: #333;
+}
+
+.contact-photo h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contact-photo p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contact-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ajouté pour aligner les éléments verticalement */
+}
+
+.contact-image-wrapper img {
+  width: 180px;             /* agrandit légèrement l’encart */
+  height: 180px;
+  object-fit: cover;
+  object-position: center 30%; /* recentre le cadrage */
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0.70);   /* <--- dézoom léger */
+  transform-origin: center; /* garde le centrage */
+}
+.contact-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ----- LOGO + NOM DU SITE ----- */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espace entre le logo et le texte */
+}
+
+/* Logo rond – même rendu desktop & mobile */
+.logo {
+  width: 60px !important;
+  height: 60px !important;   /* garde le format carré */
+  border-radius: 50%;
+  object-fit: contain;       /* logo entier */
+  background-color: #fff;    /* marges blanches internes */
+  padding: 6px;              /* espace blanc autour du dessin */
+  box-sizing: border-box;    /* le padding reste dans le cercle */
+  display: block;
+  flex-shrink: 0;            /* ne rétrécit pas dans le flex du header */
+}
+
+/* Option mobile : encore plus d’air si tu veux */
+@media (max-width: 640px) {
+  .logo {
+    width: 56px !important;
+    height: 56px !important;
+    padding: 8px;            /* ↑ marges blanches sur mobile */
+  }
+}
+/* --- Tarifs (pricing) --- */
+#services h3#tarifs {
+  margin-top: 28px;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+}
+
+.pricing {
+  background: #f7f4f1;          /* beige doux */
+  border: 1px solid #e7e1db;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;             /* largeur max du bloc */
+  margin: 20px auto;            /* centre le bloc */
+  text-align: center;
+}
+
+.pricing .group {
+  padding: 12px 0;
+  border-top: 1px dashed #e2d8cf;
+}
+.pricing .group:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.pricing h4 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+  color: #2a2a2a;
+}
+
+.pricing .row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;             /* largeur du tableau interne */
+  margin: 6px auto;             /* centre chaque ligne */
+  text-align: left;
+}
+
+.pricing .row span {
+  color: #444;
+}
+.pricing .row strong {
+  color: #222;
+}
+
+.pricing .notes {
+  margin: 16px auto 0;
+  font-size: 13px;
+  color: #6f6f6f;
+  max-width: 450px;
+}
+
+#services h3#tarifs {
+  margin-top: 28px;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #e7e1db;
+  display: inline-block;   /* la ligne ne fait que la largeur du texte */
+  padding-bottom: 5px;
+}
+/* Centre le titre "Tarifs 2024–2025" */
+#services h3#tarifs{
+  max-width: 600px;          /* même largeur que .pricing */
+  margin: 28px auto 12px;    /* centre le bloc du titre */
+  text-align: center;        /* centre le texte à l'intérieur */
+  /* option déco :
+  border-bottom: 2px solid #e7e1db;
+  padding-bottom: 5px;
+  */
+}
+/* Titre Tarifs centré */
+#services h3#tarifs {
+  max-width: 600px;
+  display: block;
+  margin: 28px auto 12px;
+  text-align: center;
+}
+/* Bloc d’accueil (hero) */
+#accueil {
+  text-align: center;
+  padding: 60px 20px;      /* espace autour, aère le texte */
+  max-width: 900px;        /* limite la largeur */
+  margin: 0 auto;          /* centre sur la page */
+}
+
+/* Titre d’accueil */
+#accueil h2 {
+  font-size: 1.8em;        /* moins gros que maintenant */
+  font-weight: 600;        /* un peu moins gras */
+  margin-bottom: 20px;     /* espace sous le titre */
+  color: #333;             /* couleur douce */
+}
+
+/* Paragraphe d’accueil */
+#accueil p {
+  font-size: 1.05em;       /* texte légèrement plus petit */
+  line-height: 1.7;        /* plus d’espace entre les lignes */
+  color: #555;             /* gris doux */
+  margin: 0 auto;
+  max-width: 700px;        /* pas de pavé trop large */
+}
+/* HERO plus doux */
+#accueil, section#accueil {
+  text-align: center !important;
+  padding: 60px 20px !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+#accueil h1, #accueil h2 {
+  font-size: 1.8em !important;
+  font-weight: 600 !important;
+  margin-bottom: 20px !important;
+  color: #333 !important;
+}
+
+#accueil p {
+  font-size: 1.05em !important;
+  line-height: 1.7 !important;
+  color: #555 !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
+/* Affinage du bloc d’accueil */
+#accueil {
+  background: #f6f3f0;          /* beige très clair */
+  border: 1px solid #e8e0d9;
+  border-radius: 14px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.04);
+  padding: 36px 24px;
+  max-width: 900px;
+  margin: 22px auto;            /* centre + ajoute de l’air autour */
+}
+
+#accueil h2 {
+  font-size: 1.6em;             /* un peu plus discret */
+  font-weight: 500;             /* moins gras */
+  letter-spacing: .2px;
+  color: #2f2f2f;
+  margin: 0 0 14px;
+}
+
+#accueil p {
+  font-size: 1.02em;
+  line-height: 1.75;
+  color: #525252;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Mobile : adoucir encore un peu */
+@media (max-width: 640px){
+  #accueil { padding: 28px 18px; margin: 16px auto; }
+  #accueil h2 { font-size: 1.4em; }
+  #accueil p { font-size: 1em; line-height: 1.7; }
+}
+/* Recentrer le titre + le bloc tarifs */
+#services h3#tarifs{
+  max-width: 600px;
+  display: block;
+  margin: 28px auto 12px !important; /* centre le titre */
+  text-align: center !important;
+}
+#services .pricing{
+  margin: 20px auto !important;      /* centre le bloc tarifs */
+}
+/* Centre le titre "Tarifs 2024–2025" de manière robuste */
+#services { text-align: center; }                 /* centre le contenu direct du bloc services */
+#services h3#tarifs {
+  display: inline-block;                          /* prend juste la largeur du texte */
+  margin: 28px auto 12px !important;              /* espace + centrage */
+  text-align: center !important;
+}
+/* Limiter la largeur du texte et centrer */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Espacement entre paragraphes */
+section p {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+}
+
+/* Mise en valeur des phrases clés */
+section p em {
+  font-style: italic;
+  color: #6b5b95; /* un ton doux (violet/gris/beige selon ta charte) */
+}
+
+/* Titre de section */
+section h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+/* --- Personnalisation sections et texte --- */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f9f8f6; /* gris beige doux */
+  border-radius: 8px; /* coins légèrement arrondis */
+}
+
+/* Paragraphes */
+section p {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+  color: #5a5352; /* gris taupe pour texte */
+}
+
+/* Mise en valeur phrases clés */
+section p em {
+  font-style: italic;
+  color: #f2b6c8; /* rose clair barbapapa */
+  font-weight: 500;
+}
+
+/* Titres de section */
+section h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #f7d9e3; /* rose fleur de cerisier */
+  text-align: center;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fcf4ef; /* gris-beige rosé chaleureux */
+  border-radius: 8px;
+}
