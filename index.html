@@ -1,73 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harmonie Thérapie - Coaching</title>
+  <link rel="stylesheet" href="style.css?v"=7">
   <style>
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f8f6f3; /* beige poudré */
+      background-color: #f9f5f6;
       color: #444;
       line-height: 1.6;
     }
+
     header {
-      background-color: #e7e2dd; /* greige clair */
+      background-color: #e7e2dd;
       padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
+      z-index: 10;
     }
+
     header h1 {
       margin: 0;
       font-size: 22px;
       color: #333;
       font-weight: 600;
     }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
     nav a {
-      margin: 0 15px;
       text-decoration: none;
       color: #555;
       font-weight: 500;
       transition: color 0.3s;
     }
+
     nav a:hover {
-      color: #a67856; /* accent poudré */
+      color: #a67856;
     }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      background: #333;
+      height: 3px;
+      margin: 4px 0;
+      width: 25px;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #e7e2dd;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     section h2 {
       font-size: 26px;
       margin-bottom: 20px;
       color: #333;
       text-align: center;
     }
+
     .hero {
       text-align: center;
       padding: 80px 20px;
       background: #f1ece8;
     }
+
     .hero h2 {
       font-size: 32px;
       color: #2e2e2e;
     }
+
     .hero p {
       font-size: 18px;
       max-width: 700px;
       margin: 20px auto;
     }
+
     form {
       max-width: 600px;
       margin: auto;
       display: flex;
       flex-direction: column;
     }
+
     input, textarea, button {
       margin: 10px 0;
       padding: 12px;
@@ -75,6 +128,7 @@
       border-radius: 6px;
       font-size: 16px;
     }
+
     button {
       background-color: #a67856;
       color: #fff;
@@ -82,9 +136,11 @@
       cursor: pointer;
       transition: background 0.3s;
     }
+
     button:hover {
       background-color: #8a5e42;
     }
+
     footer {
       background-color: #e7e2dd;
       text-align: center;
@@ -97,51 +153,171 @@
 </head>
 <body>
 
-  <header>
+<header class="site-header">
+  <div class="logo-wrapper">
+    <img src="logo.jpeg" alt="Harmonie Thérapie" class="logo">
     <h1>Harmonie Thérapie</h1>
-    <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#apropos">À propos</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  </div>
 
-  <section class="hero" id="accueil">
-    <h2>Retrouvez l'équilibre et la confiance</h2>
-    <p>Coach pour enfants et adultes afin de mieux gérer l’attention, retrouver la sérénité et avancer avec harmonie.</p>
+  <div class="menu-toggle" onclick="...">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav">
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+  </nav>
+</header>
+
+  <section class="intro">
+  <h2>Thérapeute pour enfants, adultes et couples</h2>
+  <p>
+    Je me suis spécialisée dans l’accompagnement du <strong>TDAH</strong>.
+    J’aide à clarifier les questionnements, à trouver des outils concrets et à avancer sereinement,
+    en attendant — ou en complément — d’un suivi spécialisé.
+  </p>
+  <p>
+    <em>Mon objectif&nbsp;: que chacun retrouve harmonie et qualité de vie au quotidien.</em>
+  </p>
+</section>
+
+<section id="about">
+  <h2>À propos</h2>
+
+  <p>
+    Bonjour, je suis <strong>Sarah Michaux</strong>. 
+    Je suis thérapeute et j’accompagne les enfants, les adultes et les couples dans leurs difficultés personnelles, relationnelles ou familiales. 
+    Mon approche repose sur l’écoute, la bienveillance et des outils concrets, faciles à mettre en place au quotidien.
+  </p>
+
+  <p>
+    Je me suis spécialisée dans l’accompagnement du <strong>TDAH</strong>. 
+    Souvent, les personnes concernées se retrouvent face à beaucoup de questions : certaines réponses font sens, d’autres entretiennent le doute, et les délais pour rencontrer un spécialiste sont souvent très longs. 
+    Mon rôle est de vous offrir une première écoute, de vous aider à clarifier votre situation et de vous donner des pistes concrètes pour avancer dès maintenant, en attendant — ou en complément — d’un suivi médical spécialisé.
+  </p>
+</section>
+<h3 id="tarifs" style="max-width:600px;display:block;margin:28px auto 12px;text-align:center;">
+  Tarifs 2024–2025
+</h3>
+
+<div class="pricing">
+  <!-- Bilan TDAH -->
+  <section class="group">
+    <h4>Première séance bilan (TDAH ou Autres) </h4>
+    <div class="row">
+      <span>Première séance bilan (1h00)</span>
+      <strong>50&nbsp;€</strong>
+    </div>
+
   </section>
 
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p>Je m'appelle Sarah Michaux, Coach spécialisée dans l’accompagnement des enfants et adultes avec troubles de l’attention. Mon approche est basée sur l’écoute, la bienveillance et des outils pratiques adaptés à chacun.</p>
+  <!-- Intervenante scolaire -->
+  <section class="group">
+    <h4>Intervenante scolaire</h4>
+    <div class="row">
+      <span>Intervention en école (2h)</span>
+      <strong>120&nbsp;€</strong>
+    </div>
   </section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <p>✅ Coaching individuel<br>
-       ✅ Ateliers et suivi pour enfants<br>
-       ✅ Accompagnement des familles<br>
-       ✅ Formations pour enseignants et éducateurs</p>
+  <!-- Home Organizer -->
+  <section class="group">
+    <h4>Home Organizer</h4>
+    <div class="row">
+      <span>Consultation découverte (1h30 à domicile)</span>
+      <strong>50&nbsp;€</strong>
+    </div>
+    <div class="row">
+      <span>Séance organisation (3h)</span>
+      <strong>150&nbsp;€</strong>
+    </div>
+    <div class="row">
+      <span>Forfait 10h (sur plusieurs jours)</span>
+      <strong>400&nbsp;€</strong>
+    </div>
   </section>
 
+  <!-- TCC -->
+  <section class="group">
+    <h4>Thérapie cognitive &amp; comportementale (TCC)</h4>
+    <div class="row">
+      <span>Consultation individuelle (50 min)</span>
+      <strong>40&nbsp;€</strong>
+    </div>
+    <div class="row">
+      <span>Suivi en ligne (45 min)</span>
+      <strong>30&nbsp;€</strong>
+    </div>
+  </section>
+
+  <p class="notes">
+    <strong>Infos pratiques :</strong> paiement mobile ou virement • annulation sans frais &gt; 24h • tarifs valables 2024–2025.
+  </p>
+</div>
+  </section>
+
+
+  <div class="contact-image-wrapper">
   <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/mwpqjaez" method="POST">
-  <input type="text" name="nom" placeholder="Votre nom" required>
-  <input type="email" name="email" placeholder="Votre email" required>
-  <textarea name="message" rows="5" placeholder="Votre message"></textarea>
+  <h2>Contact</h2>
+  <p class="contact-description">Vous souhaitez échanger ? Je serais ravie de vous lire ou de vous rencontrer en rendez-vous.</p>
 
-  <!-- (optionnel) sujet d'email lisible dans ta boîte -->
-  <input type="hidden" name="subject" value="Nouveau message - Harmonie Thérapie">
+  <div class="contact-image-wrapper">
+    <img src="portrait-sarah.jpg" alt="Sarah Michaux - Harmonie Thérapie">
+  </div>
 
-  <button type="submit">Envoyer</button>
-</form>
-  </section>
+  <!-- Calendly inline widget -->
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/srhmichaux/30min?back=1&month=2025-10?locale=fr"
+       style="min-width:320px;height:700px;">
+  </div>
+  <script type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js" async>
+  </script>
 
-  <footer>
+  <!-- Bouton de secours -->
+  <p style="text-align:center; margin-top:20px;">
+    <a href="https://calendly.com/srhmichaux/50min?locale=fr" target="_blank"
+       style="padding:10px 20px; background:#c5b8a5; color:#fff; text-decoration:none; border-radius:5px;">
+      Réserver via Calendly
+    </a>
+  </p>
+</section>
+
     &copy; 2025 Harmonie Thérapie - Tous droits réservés
   </footer>
 
-</body>
-</html>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav");
+      nav.classList.toggle("active");
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
