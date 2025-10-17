@@ -44,13 +44,14 @@
     .cta{margin:10px 14px 16px 14px;display:inline-block;padding:10px 14px;border-radius:10px;background:#a67856;color:#fff;font-weight:700;text-align:center;text-decoration:none}
     .cta:hover{filter:brightness(.95)}
 
-    /* Tarifs/Services */
-    .pricing{max-width:700px;margin:0 auto}
-    .group{background:#fff;border:1px solid #eadfd8;border-radius:10px;padding:16px 18px;margin:14px 0}
-    .group h4{margin:0 0 10px 0}
-    .row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px dashed #e5d8cf}
-    .row:first-of-type{border-top:none}
-    .notes{font-size:14px;opacity:.8;text-align:center}
+    /* Tarifs par spécialité */
+    .pricing{max-width:780px;margin:0 auto}
+    .pricing .bloc{background:#fff;border:1px solid #eadfd8;border-radius:12px;padding:18px 18px 8px 18px;margin:16px 0}
+    .pricing .bloc h3{margin:0 0 8px 0;text-align:left;font-size:20px}
+    .pricing .row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px dashed #e5d8cf}
+    .pricing .row:first-of-type{border-top:none}
+    .pricing .hint{font-size:13px;opacity:.8;margin-top:6px}
+    .notes{font-size:14px;opacity:.8;text-align:center;margin-top:14px}
 
     /* Contact */
     .contact-image-wrapper{text-align:center}
@@ -74,7 +75,7 @@
   <nav id="nav" aria-label="Navigation principale">
     <a href="#accueil">Accueil</a>
     <a href="#apropos">À propos</a>
-    <a href="#services">Services</a>
+    <a href="#tarifs">Tarifs</a>
     <a href="mystery.html">Mystery Shopping</a>
     <a href="scolaire.html">Interventions scolaires</a>
     <a href="#contact">Contact</a>
@@ -147,33 +148,47 @@
   </p>
 </section>
 
-<!-- 💼 SERVICES -->
-<section id="services">
-  <h2>Tarifs 2024–2025</h2>
+<!-- 💼 TARIFS PAR SPÉCIALITÉ -->
+<section id="tarifs" aria-labelledby="tarifs-title">
+  <h2 id="tarifs-title">Tarifs par spécialité</h2>
 
   <div class="pricing">
-    <section class="group">
-      <h4>Première séance bilan (TDAH ou autres)</h4>
+
+    <!-- Thérapie & TCC -->
+    <div class="bloc" style="border-left:6px solid #e9d5cf">
+      <h3>🧠 Thérapie & accompagnement TCC</h3>
       <div class="row"><span>Première séance bilan (1h00)</span><strong>50&nbsp;€</strong></div>
-    </section>
+      <div class="row"><span>Consultation individuelle (50 min)</span><strong>40&nbsp;€</strong></div>
+      <div class="row"><span>Suivi en ligne (45 min)</span><strong>30&nbsp;€</strong></div>
+      <p class="hint">Spécialisation TDAH — enfants, adultes et couples.</p>
+    </div>
 
-    <section class="group">
-      <h4>Intervenante scolaire</h4>
+    <!-- Mystery Shopping & Coaching d'équipe -->
+    <div class="bloc" style="border-left:6px solid #ded7cf">
+      <h3>💼 Mystery Shopping & coaching d’équipe</h3>
+      <div class="row"><span>Visite mystère + rapport + restitution</span><strong>Sur devis</strong></div>
+      <div class="row"><span>Coaching managérial sur le terrain</span><strong>Sur devis</strong></div>
+      <div class="row"><span>Programme de suivi (mensuel / trimestriel)</span><strong>Sur devis</strong></div>
+      <p class="hint">Devis personnalisé selon le nombre de sites, objectifs et formats.</p>
+    </div>
+
+    <!-- Interventions scolaires -->
+    <div class="bloc" style="border-left:6px solid #dceee6">
+      <h3>🎓 Interventions scolaires & neuroatypie</h3>
       <div class="row"><span>Intervention en école (2h)</span><strong>120&nbsp;€</strong></div>
-    </section>
+      <div class="row"><span>Atelier pratique (demi-journée / journée)</span><strong>Sur devis</strong></div>
+      <div class="row"><span>Accompagnement d’équipe sur l’année</span><strong>Sur devis</strong></div>
+      <p class="hint">TDAH, DYS, outils concrets et aménagements raisonnables.</p>
+    </div>
 
-    <section class="group">
-      <h4>Home Organizer</h4>
+    <!-- Organisation d’intérieur (optionnel) -->
+    <div class="bloc" style="border-left:6px solid #e7e2dd">
+      <h3>🏡 Organisation d’intérieur (Harmonie Organisée)</h3>
       <div class="row"><span>Consultation découverte (1h30 à domicile)</span><strong>50&nbsp;€</strong></div>
       <div class="row"><span>Séance organisation (3h)</span><strong>150&nbsp;€</strong></div>
       <div class="row"><span>Forfait 10h (sur plusieurs jours)</span><strong>400&nbsp;€</strong></div>
-    </section>
-
-    <section class="group">
-      <h4>Thérapie cognitive &amp; comportementale (TCC)</h4>
-      <div class="row"><span>Consultation individuelle (50 min)</span><strong>40&nbsp;€</strong></div>
-      <div class="row"><span>Suivi en ligne (45 min)</span><strong>30&nbsp;€</strong></div>
-    </section>
+      <p class="hint">Tri, rangement, routines & optimisation douce de l’espace.</p>
+    </div>
 
     <p class="notes"><strong>Infos pratiques :</strong> paiement mobile ou virement • annulation sans frais &gt; 24h • tarifs valables 2024–2025.</p>
   </div>
