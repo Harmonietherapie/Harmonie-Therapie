@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harmonie Thérapie - Coaching</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=7" />
+  <link rel="stylesheet" href="style.css?v=8" />
   <style>
     body{margin:0;font-family:"Lato","Helvetica Neue",Arial,sans-serif;background:#f9f5f6;color:#444;line-height:1.6}
     header{background:#e7e2dd;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
@@ -22,7 +22,6 @@
       nav.active{display:flex}
       .menu-toggle{display:flex}
     }
-
     section{padding:60px 20px;max-width:1000px;margin:auto}
     section h2{font-size:26px;margin-bottom:20px;color:#333;text-align:center}
     .hero{text-align:center;padding:80px 20px;background:#f1ece8}
@@ -43,15 +42,6 @@
     .card p{margin:0 14px 14px 14px;opacity:.9}
     .cta{margin:10px 14px 16px 14px;display:inline-block;padding:10px 14px;border-radius:10px;background:#a67856;color:#fff;font-weight:700;text-align:center;text-decoration:none}
     .cta:hover{filter:brightness(.95)}
-
-    /* Tarifs par spécialité */
-    .pricing{max-width:780px;margin:0 auto}
-    .pricing .bloc{background:#fff;border:1px solid #eadfd8;border-radius:12px;padding:18px 18px 8px 18px;margin:16px 0}
-    .pricing .bloc h3{margin:0 0 8px 0;text-align:left;font-size:20px}
-    .pricing .row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px dashed #e5d8cf}
-    .pricing .row:first-of-type{border-top:none}
-    .pricing .hint{font-size:13px;opacity:.8;margin-top:6px}
-    .notes{font-size:14px;opacity:.8;text-align:center;margin-top:14px}
 
     /* Contact */
     .contact-image-wrapper{text-align:center}
@@ -75,7 +65,7 @@
   <nav id="nav" aria-label="Navigation principale">
     <a href="#accueil">Accueil</a>
     <a href="#apropos">À propos</a>
-    <a href="#tarifs">Tarifs</a>
+    <a href="therapie.html">Thérapie TCC</a>
     <a href="mystery.html">Mystery Shopping</a>
     <a href="scolaire.html">Interventions scolaires</a>
     <a href="#contact">Contact</a>
@@ -97,15 +87,13 @@
 <section class="cards" aria-labelledby="choix">
   <h2 id="choix">Choisissez votre besoin</h2>
   <div class="cards-grid">
-    <!-- Carte 1 : Thérapie -->
     <article class="card">
       <span class="tag tag-rose">Thérapie</span>
       <h3>Thérapie TCC & TDAH</h3>
       <p>Suivi pour enfants, adultes et couples. Approche bienveillante et outils concrets.</p>
-      <a class="cta" href="#contact">Prendre rendez-vous</a>
+      <a class="cta" href="therapie.html">Découvrir</a>
     </article>
 
-    <!-- Carte 2 : Mystery / Entreprises -->
     <article class="card">
       <span class="tag tag-greige">Entreprises</span>
       <h3>Mystery Shopping & coaching d’équipe</h3>
@@ -113,7 +101,6 @@
       <a class="cta" href="mystery.html">Découvrir</a>
     </article>
 
-    <!-- Carte 3 : Scolaire -->
     <article class="card">
       <span class="tag tag-menthe">Éducation</span>
       <h3>Interventions scolaires & neuroatypie</h3>
@@ -126,72 +113,11 @@
 <!-- 🌸 À PROPOS -->
 <section id="apropos">
   <h2>À propos</h2>
-
-  <p>
-    Je suis <strong>Sarah Michaux</strong>, thérapeute et consultante, passionnée par l’humain sous toutes ses facettes.
-  </p>
-
-  <p>
-    Au fil de mon parcours, j’ai choisi d’unir mes compétences en <strong>thérapie cognitive et comportementale (TCC)</strong>, en <strong>coaching managérial</strong> et en <strong>intervention scolaire</strong> autour d’un même fil conducteur&nbsp;: <em>l’harmonie</em>.
-  </p>
-
-  <p>
-    J’accompagne les enfants, les adultes et les couples à travers la thérapie, les entreprises par le biais du <strong>Mystery Shopping et du coaching d’équipe</strong>, et les écoles via des <strong>formations autour de la neuroatypie</strong>.
-  </p>
-
-  <p>
-    Mon approche est à la fois <strong>bienveillante, structurée et pragmatique</strong> : chaque accompagnement se veut concret, humain et adapté à la réalité du terrain.
-  </p>
-
-  <p style="text-align:center;font-style:italic;color:#6b584a;margin-top:30px;">
-    Ma mission&nbsp;: aider chacun — individu, équipe ou institution — à retrouver clarté, équilibre et confiance en ses propres ressources.
-  </p>
-</section>
-
-<!-- 💼 TARIFS PAR SPÉCIALITÉ -->
-<section id="tarifs" aria-labelledby="tarifs-title">
-  <h2 id="tarifs-title">Tarifs par spécialité</h2>
-
-  <div class="pricing">
-
-    <!-- Thérapie & TCC -->
-    <div class="bloc" style="border-left:6px solid #e9d5cf">
-      <h3>🧠 Thérapie & accompagnement TCC</h3>
-      <div class="row"><span>Première séance bilan (1h00)</span><strong>50&nbsp;€</strong></div>
-      <div class="row"><span>Consultation individuelle (50 min)</span><strong>40&nbsp;€</strong></div>
-      <div class="row"><span>Suivi en ligne (45 min)</span><strong>30&nbsp;€</strong></div>
-      <p class="hint">Spécialisation TDAH — enfants, adultes et couples.</p>
-    </div>
-
-    <!-- Mystery Shopping & Coaching d'équipe -->
-    <div class="bloc" style="border-left:6px solid #ded7cf">
-      <h3>💼 Mystery Shopping & coaching d’équipe</h3>
-      <div class="row"><span>Visite mystère + rapport + restitution</span><strong>Sur devis</strong></div>
-      <div class="row"><span>Coaching managérial sur le terrain</span><strong>Sur devis</strong></div>
-      <div class="row"><span>Programme de suivi (mensuel / trimestriel)</span><strong>Sur devis</strong></div>
-      <p class="hint">Devis personnalisé selon le nombre de sites, objectifs et formats.</p>
-    </div>
-
-    <!-- Interventions scolaires -->
-    <div class="bloc" style="border-left:6px solid #dceee6">
-      <h3>🎓 Interventions scolaires & neuroatypie</h3>
-      <div class="row"><span>Intervention en école (2h)</span><strong>120&nbsp;€</strong></div>
-      <div class="row"><span>Atelier pratique (demi-journée / journée)</span><strong>Sur devis</strong></div>
-      <div class="row"><span>Accompagnement d’équipe sur l’année</span><strong>Sur devis</strong></div>
-      <p class="hint">TDAH, DYS, outils concrets et aménagements raisonnables.</p>
-    </div>
-
-    <!-- Organisation d’intérieur (optionnel) -->
-    <div class="bloc" style="border-left:6px solid #e7e2dd">
-      <h3>🏡 Organisation d’intérieur (Harmonie Organisée)</h3>
-      <div class="row"><span>Consultation découverte (1h30 à domicile)</span><strong>50&nbsp;€</strong></div>
-      <div class="row"><span>Séance organisation (3h)</span><strong>150&nbsp;€</strong></div>
-      <div class="row"><span>Forfait 10h (sur plusieurs jours)</span><strong>400&nbsp;€</strong></div>
-      <p class="hint">Tri, rangement, routines & optimisation douce de l’espace.</p>
-    </div>
-
-    <p class="notes"><strong>Infos pratiques :</strong> paiement mobile ou virement • annulation sans frais &gt; 24h • tarifs valables 2024–2025.</p>
-  </div>
+  <p>Je suis <strong>Sarah Michaux</strong>, thérapeute et consultante, passionnée par l’humain sous toutes ses facettes.</p>
+  <p>Au fil de mon parcours, j’ai choisi d’unir mes compétences en <strong>thérapie cognitive et comportementale (TCC)</strong>, en <strong>coaching managérial</strong> et en <strong>intervention scolaire</strong> autour d’un même fil conducteur&nbsp;: <em>l’harmonie</em>.</p>
+  <p>J’accompagne les enfants, les adultes et les couples à travers la thérapie, les entreprises par le biais du <strong>Mystery Shopping et du coaching d’équipe</strong>, et les écoles via des <strong>formations autour de la neuroatypie</strong>.</p>
+  <p>Mon approche est à la fois <strong>bienveillante, structurée et pragmatique</strong> : chaque accompagnement se veut concret, humain et adapté à la réalité du terrain.</p>
+  <p style="text-align:center;font-style:italic;color:#6b584a;margin-top:30px;">Ma mission&nbsp;: aider chacun — individu, équipe ou institution — à retrouver clarté, équilibre et confiance en ses propres ressources.</p>
 </section>
 
 <!-- 📞 CONTACT -->
@@ -205,14 +131,12 @@
     <img src="portrait-sarah.jpg" alt="Sarah Michaux - Harmonie Thérapie" />
   </div>
 
-  <!-- Calendly inline widget -->
   <div class="calendly-inline-widget"
        data-url="https://calendly.com/srhmichaux/30min?back=1&month=2025-10&locale=fr"
        style="min-width:320px;height:700px;">
   </div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-  <!-- Bouton de secours -->
   <p style="text-align:center;margin-top:20px;">
     <a href="https://calendly.com/srhmichaux/30min?locale=fr" target="_blank"
        style="padding:10px 20px;background:#c5b8a5;color:#fff;text-decoration:none;border-radius:5px;">
