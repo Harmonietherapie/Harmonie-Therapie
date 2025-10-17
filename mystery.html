@@ -4,19 +4,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mystery Shopping & Coaching — Harmonie</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=8" />
+  <style>
+    body{margin:0;font-family:"Lato","Helvetica Neue",Arial,sans-serif;background:#f9f5f6;color:#444}
+    header{background:#e7e2dd;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
+    a{text-decoration:none;color:#555}
+    .container{max-width:1000px;margin:0 auto;padding:30px 20px}
+    .bloc{background:#fff;border:1px solid #eadfd8;border-radius:12px;padding:18px 18px 8px 18px;margin:16px 0;border-left:6px solid #ded7cf}
+    .bloc h2{margin:0 0 10px 0}
+    .row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px dashed #e5d8cf}
+    .row:first-of-type{border-top:none}
+    .hint{font-size:13px;opacity:.8;margin-top:6px}
+    .cta{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:#a67856;color:#fff}
+    footer{background:#e7e2dd;text-align:center;padding:16px;margin-top:40px;font-size:14px;color:#666}
+  </style>
 </head>
 <body>
-  <header class="ht-header">
-    <nav class="ht-nav">
-      <div class="ht-brand"><a href="index.html">Harmonie Thérapie</a></div>
-      <a href="index.html">Accueil</a>
+  <header>
+    <div><a href="index.html">← Accueil</a></div>
+    <nav>
+      <a href="therapie.html">Thérapie</a> ·
+      <a href="mystery.html">Mystery</a> ·
+      <a href="scolaire.html">Scolaire</a>
     </nav>
   </header>
 
-  <main class="ht-container" style="padding-top:26px;">
+  <main class="container">
     <h1>Mystery Shopping & coaching d’équipes</h1>
-    <p>Un dispositif terrain pour faire progresser l’expérience client et les compétences managériales.</p>
+    <p>Dispositif terrain pour faire progresser l’expérience client et les compétences managériales.</p>
 
     <section>
       <h2>Ce que je propose</h2>
@@ -38,11 +53,16 @@
       </ol>
     </section>
 
-    <section>
-      <h2>Prendre contact</h2>
-      <p>Email : <a href="mailto:srhmichaux@gmail.com">srhmichaux@gmail.com</a> — 
-        Réservation : <a href="https://calendly.com/">Calendly</a></p>
+    <section class="bloc">
+      <h2>Tarifs — Entreprises</h2>
+      <div class="row"><span>Visite mystère + rapport + restitution</span><strong>Sur devis</strong></div>
+      <div class="row"><span>Coaching managérial sur le terrain</span><strong>Sur devis</strong></div>
+      <div class="row"><span>Programme de suivi (mensuel / trimestriel)</span><strong>Sur devis</strong></div>
+      <p class="hint">Devis personnalisé selon le nombre de sites, la durée et les objectifs.</p>
+      <a class="cta" href="mailto:srhmichaux@gmail.com">Demander un devis</a>
     </section>
   </main>
+
+  <footer>&copy; 2025 Harmonie Thérapie</footer>
 </body>
 </html>
