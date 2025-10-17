@@ -4,15 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Harmonie Thérapie</title>
-  <link rel="stylesheet" href="style.css?v=13" />
+  <link rel="stylesheet" href="style.css?v=14" />
   <style>
     body{margin:0;font-family:"Lato","Helvetica Neue",Arial,sans-serif;background:#f9f5f6;color:#444}
     header{background:#e7e2dd;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
     a{text-decoration:none;color:#555}
     .container{max-width:900px;margin:0 auto;padding:40px 20px}
     h1{color:#333;text-align:center;margin-bottom:10px}
-    p.intro{text-align:center;max-width:700px;margin:0 auto 20px auto}
-    .email{text-align:center;margin-bottom:25px;font-size:18px}
+    p.intro{text-align:center;max-width:700px;margin:0 auto 10px}
+    .email{display:block;text-align:center;margin:8px 0 22px;font-size:18px}
     .email a{color:#a67856;font-weight:600;text-decoration:none}
     .email a:hover{text-decoration:underline}
     .contact-image-wrapper{text-align:center;margin-bottom:20px}
@@ -39,14 +39,10 @@
 
   <main class="container">
     <h1>Contact</h1>
-    <p class="intro">
-      Vous souhaitez échanger ? Écrivez-moi ou réservez un créneau directement ci-dessous 🌿
-    </p>
+    <p class="intro">Vous souhaitez échanger ? Écrivez-moi ou réservez un créneau directement ci-dessous.</p>
 
-    <!-- 💌 Adresse e-mail visible directement -->
-    <div class="email">
-      📧 <a href="mailto:srhmichaux@gmail.com">srhmichaux@gmail.com</a>
-    </div>
+    <!-- 💌 Adresse e-mail affichée très haut -->
+    <p class="email">📧 <a href="mailto:srhmichaux@gmail.com">srhmichaux@gmail.com</a></p>
 
     <div class="contact-image-wrapper">
       <img src="portrait-sarah.jpg" alt="Sarah Michaux - Harmonie Thérapie">
@@ -57,11 +53,9 @@
          data-url="https://calendly.com/srhmichaux/30min?back=1&month=2025-10&locale=fr"
          style="min-width:320px;height:700px;">
     </div>
-    <script type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js" async>
-    </script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-    <!-- 💬 Formulaire -->
+    <!-- 💬 Formulaire mailto (optionnel) -->
     <form action="mailto:srhmichaux@gmail.com" method="post" enctype="text/plain" style="margin-top:40px;">
       <label for="name">Nom</label>
       <input type="text" id="name" name="Nom" placeholder="Votre nom complet" required>
@@ -73,9 +67,7 @@
       <textarea id="message" name="Message" placeholder="Votre message..." required></textarea>
 
       <button type="submit">Envoyer le message</button>
-      <p style="text-align:center;margin-top:10px;font-size:14px;color:#6b584a;">
-        Je réponds généralement dans les 24h 🌸
-      </p>
+      <p style="text-align:center;margin-top:10px;font-size:14px;color:#6b584a;">Je réponds généralement dans les 24h 🌸</p>
     </form>
   </main>
 
