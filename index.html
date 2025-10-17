@@ -22,24 +22,41 @@
       nav.active{display:flex}
       .menu-toggle{display:flex}
     }
+
     section{padding:60px 20px;max-width:1000px;margin:auto}
     section h2{font-size:26px;margin-bottom:20px;color:#333;text-align:center}
     .hero{text-align:center;padding:80px 20px;background:#f1ece8}
     .hero h2{font-size:32px;color:#2e2e2e}
-    .hero p{font-size:18px;max-width:700px;margin:20px auto}
-    form{max-width:600px;margin:auto;display:flex;flex-direction:column}
-    input,textarea,button{margin:10px 0;padding:12px;border:1px solid #ccc;border-radius:6px;font-size:16px}
-    button{background:#a67856;color:#fff;border:none;cursor:pointer;transition:background .3s}
-    button:hover{background:#8a5e42}
+    .hero p{font-size:18px;max-width:760px;margin:16px auto}
+
+    /* Cartes d'accueil */
+    .cards{max-width:1100px}
+    .cards h2{margin-bottom:10px}
+    .cards-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:12px}
+    @media (min-width:760px){.cards-grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:#ffffff;border:1px solid #eadfd8;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-height:210px}
+    .tag{font-size:12px;font-weight:700;letter-spacing:.3px;display:inline-block;margin:14px 14px 0 14px;padding:6px 10px;border-radius:999px}
+    .tag-rose{background:#e9d5cf}
+    .tag-greige{background:#ded7cf}
+    .tag-menthe{background:#dceee6}
+    .card h3{margin:10px 14px 6px 14px;font-size:20px}
+    .card p{margin:0 14px 14px 14px;opacity:.9}
+    .cta{margin:10px 14px 16px 14px;display:inline-block;padding:10px 14px;border-radius:10px;background:#a67856;color:#fff;font-weight:700;text-align:center;text-decoration:none}
+    .cta:hover{filter:brightness(.95)}
+
+    /* Tarifs/Services */
     .pricing{max-width:700px;margin:0 auto}
     .group{background:#fff;border:1px solid #eadfd8;border-radius:10px;padding:16px 18px;margin:14px 0}
     .group h4{margin:0 0 10px 0}
     .row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px dashed #e5d8cf}
     .row:first-of-type{border-top:none}
     .notes{font-size:14px;opacity:.8;text-align:center}
-    footer{background:#e7e2dd;text-align:center;padding:20px;margin-top:40px;font-size:14px;color:#666}
+
+    /* Contact */
     .contact-image-wrapper{text-align:center}
     .contact-image-wrapper img{max-width:180px;height:auto;border-radius:8px}
+
+    footer{background:#e7e2dd;text-align:center;padding:20px;margin-top:40px;font-size:14px;color:#666}
   </style>
 </head>
 <body>
@@ -64,28 +81,73 @@
   </nav>
 </header>
 
+<!-- 🌿 INTRO -->
 <section id="accueil" class="intro hero">
-  <h2>Thérapeute pour enfants, adultes et couples</h2>
+  <h2>Accompagner l’humain dans toutes ses dimensions</h2>
   <p>
-    Spécialisation <strong>TDAH</strong>. Outils concrets, écoute bienveillante et approche pragmatique
-    pour avancer sereinement — en attente ou en complément d’un suivi spécialisé.
+    Thérapie, coaching ou formation&nbsp;: chaque rencontre est une invitation à rétablir l’équilibre entre le corps, l’esprit et les relations.
   </p>
-  <p><em>Mon objectif : que chacun retrouve harmonie et qualité de vie au quotidien.</em></p>
+  <p>
+    J’accompagne les enfants, les adultes et les équipes à mieux se comprendre, à trouver des outils concrets et à créer un cadre de vie ou de travail plus apaisé.
+  </p>
 </section>
 
+<!-- 🧭 CARTES DE NAVIGATION -->
+<section class="cards" aria-labelledby="choix">
+  <h2 id="choix">Choisissez votre besoin</h2>
+  <div class="cards-grid">
+    <!-- Carte 1 : Thérapie -->
+    <article class="card">
+      <span class="tag tag-rose">Thérapie</span>
+      <h3>Thérapie TCC & TDAH</h3>
+      <p>Suivi pour enfants, adultes et couples. Approche bienveillante et outils concrets.</p>
+      <a class="cta" href="#contact">Prendre rendez-vous</a>
+    </article>
+
+    <!-- Carte 2 : Mystery / Entreprises -->
+    <article class="card">
+      <span class="tag tag-greige">Entreprises</span>
+      <h3>Mystery Shopping & coaching d’équipe</h3>
+      <p>Visites mystères, restitution claire et plan d’actions. Développement des managers sur le terrain.</p>
+      <a class="cta" href="mystery.html">Découvrir</a>
+    </article>
+
+    <!-- Carte 3 : Scolaire -->
+    <article class="card">
+      <span class="tag tag-menthe">Éducation</span>
+      <h3>Interventions scolaires & neuroatypie</h3>
+      <p>Sensibilisation TDAH & DYS, outils prêts à l’emploi pour la classe, formats flexibles.</p>
+      <a class="cta" href="scolaire.html">Découvrir</a>
+    </article>
+  </div>
+</section>
+
+<!-- 🌸 À PROPOS -->
 <section id="apropos">
   <h2>À propos</h2>
+
   <p>
-    Bonjour, je suis <strong>Sarah Michaux</strong>. J’accompagne les enfants, les adultes et les couples
-    dans leurs difficultés personnelles, relationnelles ou familiales, avec des outils concrets et une posture
-    TCC centrée solutions.
+    Je suis <strong>Sarah Michaux</strong>, thérapeute et consultante, passionnée par l’humain sous toutes ses facettes.
   </p>
+
   <p>
-    Ma spécialisation <strong>TDAH</strong> répond aux besoins d’orientation, de clarification et de premières
-    pistes d’action, en attendant — ou en complément — d’un suivi médical spécialisé.
+    Au fil de mon parcours, j’ai choisi d’unir mes compétences en <strong>thérapie cognitive et comportementale (TCC)</strong>, en <strong>coaching managérial</strong> et en <strong>intervention scolaire</strong> autour d’un même fil conducteur&nbsp;: <em>l’harmonie</em>.
+  </p>
+
+  <p>
+    J’accompagne les enfants, les adultes et les couples à travers la thérapie, les entreprises par le biais du <strong>Mystery Shopping et du coaching d’équipe</strong>, et les écoles via des <strong>formations autour de la neuroatypie</strong>.
+  </p>
+
+  <p>
+    Mon approche est à la fois <strong>bienveillante, structurée et pragmatique</strong> : chaque accompagnement se veut concret, humain et adapté à la réalité du terrain.
+  </p>
+
+  <p style="text-align:center;font-style:italic;color:#6b584a;margin-top:30px;">
+    Ma mission&nbsp;: aider chacun — individu, équipe ou institution — à retrouver clarté, équilibre et confiance en ses propres ressources.
   </p>
 </section>
 
+<!-- 💼 SERVICES -->
 <section id="services">
   <h2>Tarifs 2024–2025</h2>
 
@@ -117,6 +179,7 @@
   </div>
 </section>
 
+<!-- 📞 CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <p class="contact-description" style="text-align:center;max-width:720px;margin:0 auto 18px;">
